@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+.fa-print{
+    background-color:white;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -1000,4 +1004,5 @@ footer {
     .section-title h2 {
         font-size: 20pt;
     }
+
 }
