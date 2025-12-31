@@ -927,7 +927,7 @@ footer {
 
     .hero-contact {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .section-title h2 {
@@ -1004,5 +1004,6 @@ footer {
     }
 
 }
+
 
 
