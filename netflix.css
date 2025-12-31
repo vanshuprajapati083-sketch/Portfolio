@@ -1,0 +1,350 @@
+
+.mainDiv {
+    margin:0px 0px;
+    padding:0px 0px;
+    box-sizing: border-box;
+    background-color: rgb(16, 16, 16);
+}
+
+
+/* POSTER MAIN */
+.poster {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+
+}
+
+/* LOGO NETFLIX */
+.logo {
+    width: 8%;
+    position: absolute;
+    left: 4%;
+    top: 1%;
+    z-index: 20;
+}
+
+/* NAVITEMS START */
+.navItems {
+    position: absolute;
+    left: 12%;
+    top: 3%;
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NAVITEMSs START */
+.navItemsS {
+    position: absolute;
+    z-index: 20;
+    top: 3%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* NAVTXT,NAVTXTs,navItems START */
+.navItems .navTxt,
+.navTxts {
+    color: white;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+/* navTxt:hover */
+.navTxts:hover {
+    color: rgb(180, 178, 178);
+}
+
+/* navItemsS TXT start */
+.navTxtS {
+    color: white;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.navTxtSi {
+    font-size: 20px;
+    color: white;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+/* navItems Txt Ends */
+
+
+
+/* Account More Css Starts */
+.Account {
+    position: relative;
+    padding: 0px 40px;
+}
+
+.accountMore {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 110%;
+    width: auto;
+    left: 0;
+}
+
+.accMoreItems {
+
+   text-align: center;
+    font-size: 14px;
+    padding: 2px 0px;
+}
+
+.Account:hover .accountMore {
+    display: flex;
+}
+
+/* Account More Css Ends */
+
+
+
+/* NAVBAR MEDIA SCREEN STARTS HERE */
+
+@media only screen and (max-width:1100px) and (min-width:600px) {
+    .navItemsS {
+        top: 1.2%;
+    }
+
+    .navItems {
+        display: none;
+    }
+
+    .children {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px) and (min-width:276px) {
+    .navItemsS {
+        top: 1.2%;
+    }
+
+    .navItems{
+        display: none;
+    }
+
+    .children {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .accMoreItems{
+        font-size: 8px;
+    }
+
+    .navTxtSi {
+        font-size: 12px;
+        padding: 0px 12px;
+        font-size: 12px;
+    }
+}
+
+/* NAVBAR MEDIA ENDs here */
+
+/* POSTER BTNS STARTS HERE */
+.posterBtns {
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
+    z-index: 25;
+}
+
+.play {
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: none;
+}
+
+.moreInfo {
+    padding: 10px 25px;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    border: none;
+    opacity: 0.3;
+}
+
+.play:hover {
+    background-color: rgb(187, 184, 184);
+}
+
+.moreInfo:hover {
+    background-color: rgba(187, 184, 184, 0.5);
+    color: #fff;
+}
+
+
+/* .NON{
+    position: absolute;
+    bottom: 50%;
+} */
+
+.browse{
+    position: relative;
+    display: none;
+}
+
+.navItemss {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 120%;
+    width: auto;
+    background-color: red;
+}
+
+.navTxtss {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 2px 20px;
+    text-align: center;
+
+}
+
+.navItemss:hover .navTxtss{
+    display: flex;
+}
+
+
+
+
+/* SPLIDE JS CROUSEL CSS STARTS HERE */
+
+.carousel-container {
+            position: relative;
+            width: 99%;
+            /* margin-left: 12px; */
+            margin: 0px 12px 0px;
+            overflow: hidden;
+        }
+
+        .carousel-container h2 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .carousel {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .crouselHeading{
+            margin-top: 70px;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel img {
+            width:240px;
+            height: 140px;
+            border-radius: 8px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.12);
+        }
+
+        /* -------------------------- */
+        /* 📱 Mobile (Small Screens)  */
+        /* -------------------------- */
+        @media (max-width: 600px) {
+            .carousel img {
+                width: 160px;
+                height: 100px;
+            }
+
+            .arrow {
+                font-size: 26px;
+                padding: 4px 8px;
+            }
+
+            .carousel-container h2 {
+                font-size: 18px;
+            }
+        }
+
+        /* -------------------------- */
+        /* 📱 Tablet (Medium Screens) */
+        /* -------------------------- */
+        @media (max-width: 900px) {
+            .carousel img {
+                width: 200px;
+                height: 120px;
+            }
+
+            .arrow {
+                font-size: 30px;
+            }
+
+            .carousel-container h2 {
+                font-size: 20px;
+            }
+        }
+
+        .continueWatching{
+            padding: 18px 0px;
+        }
+
+
+/* SPLIDE JS CROUSEL ENDS HERE */
+
+/* Footer Starts here */
+.footer{
+    padding-top: 56px;
+}
+
+.footerRow{
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerTxt{
+    color: rgb(141, 139, 139);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+.counting{
+    display: flex;
+    position: relative;
+    padding-left: 90px;
+}
+
+.imgPoster{
+    position: absolute;
+    left: 70%;
+}
+
+

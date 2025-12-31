@@ -1,0 +1,356 @@
+
+body{
+    margin: 0px;
+    padding-right: 0px;
+}
+
+.Mainbox{
+    overflow-x: hidden;
+}
+
+.logoImg{
+    width: 150px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.box2Div{
+    background-color: rgb(142, 24, 142);
+}
+
+.box2Items1{
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 10px
+}
+
+.box2Items{
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.box2Items:hover{
+    border: 1px solid white;
+    border-radius: 10px;
+
+
+}
+
+.vikaspuri{
+    color: rgb(220, 50, 106);
+    font-weight: bolder;
+    text-align: center;
+}
+
+.bed1{
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.para1{
+    font-size: 1.2rem;
+    margin-right: 100px;
+
+}
+
+.typesOfBaby{
+    color:rgb(220, 29, 197) ;
+}
+
+.babyImgs{
+    width: 100px;
+    height: 100px;
+}
+
+.enquireNow{
+    color: white;
+    background-color:rgb(242, 62, 194) ;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.enquireNow:hover{
+    background-color:rgb(247, 4, 182) ;
+}
+
+.bed1Imgs{
+    border-radius: 10px;
+    width: 40%;
+}
+
+.typesOfMaternity{
+    color:rgb(220, 29, 197) ;
+}
+
+.cashPakages{
+    color: white;
+    background-color: rgb(182, 55, 221);
+    font-size: 1.2rem;
+    width: 200px;
+    border-radius:5px;
+    text-align: center;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+
+.borderLine{
+    border: 1px solid black;
+    border-style: dashed;
+}
+
+.box4Col{
+    border: 1px solid rgb(181, 178, 178) ;
+    border-radius: 10px;
+}
+
+.indiaGateHeading{
+    color:rgb(220, 29, 197);
+
+}
+
+.bookAppointment{
+    text-align: center;
+    border: 1px solid rgb(16, 16, 16);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.bookAppointment:hover{
+    color: white;
+    background-color: rgb(147, 38, 175);
+    border: none;
+}
+
+.box4Location{
+    width: 40%;
+}
+
+.ourDoctor{
+    text-align: center;
+    color:rgb(174, 28, 157) ;
+    padding: 45px;
+}
+
+.doctorImgTxt{
+    margin: 0px 50px;
+}
+
+.doctorName{
+    color: rgb(220, 29, 197);
+    font-size: 1.2rem;
+}
+
+.MBBS-MS,.Patparganj{
+    color: rgb(193, 189, 189);
+}
+
+.profileAppoint{
+    font-size: 15px;
+    border: 1px solid rgb(205, 30, 214);
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profileAppoint:hover{
+    border: none;
+    background-color: rgb(144, 18, 158);
+    color: white;
+
+}
+
+.pakages{
+    margin-top: 100px;
+}
+
+.pakagesTxt1{
+    text-align: center;
+    color: rgb(247, 4, 182);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.pakagesTxt2{
+    text-align: center;
+    color: rgb(144, 18, 158);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: -15px;
+}
+
+.pakagesCardTxt{
+    font-weight: bolder;
+    font-size: 1.2rem;
+
+}
+
+.insuranceDiv{
+    margin-top: 150px;
+}
+
+.insuranceTxt1{
+    text-align: center;
+    color: rgb(247, 4, 182);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.insuranceTxt2{
+    text-align: center;
+    color: rgb(144, 18, 158);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: -15px;
+}
+
+.expertDiv{
+    margin-top: 150px;
+}
+
+.expertTxt1{
+    text-align: center;
+    color: rgb(247, 4, 182);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.expertTxt2{
+    text-align: center;
+    color: rgb(144, 18, 158);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: -15px;
+}
+
+.expertTimeName{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.expertTxt{
+    font-size: 13px;
+    color: grey;
+}
+
+.expertDivRow{
+    margin-top: 100px;
+}
+
+.expertBlogs{
+   font-size: 1.2rem;
+   text-align: center;
+   width: 12%;
+   padding: 8px;
+   border: 2px solid rgb(144, 18, 158);
+   margin-top: 20px;
+   border-radius: 30px;
+   cursor: pointer;
+   
+}
+
+.expertBlogs:hover{
+    border: none;
+    color: white;
+    background-color: rgb(147, 38, 175);
+}
+
+.centre{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.centreTxt{
+    font-size: 1.3rem;
+}
+
+.plus{
+    font-size: 1.3rem;
+}
+
+.otherCentre{
+    color: rgb(159, 28, 174);
+    margin-top: 80px;
+}
+
+.centreCol{
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.centreCol:hover{
+    color: rgb(174, 28, 157);
+    margin-top: -4px;
+}
+
+.footerRow{
+    margin: 100px 20px;
+}
+
+.contactUs{
+    font-weight: bolder;
+}
+
+.contactInfo{
+    font-size: 1.1rem;
+    color: grey;
+    cursor: pointer;
+}
+.contactInfo:hover{
+    color: rgb(174, 28, 157);
+    border-bottom:1px solid rgb(174, 28, 157);
+}
+
+.RegisteredOffice{
+    font-weight: bolder;
+}
+.tel,.address{
+    color: grey;
+    cursor: pointer;
+}
+.tel:hover{
+    color:rgb(174, 28, 157);
+    border-bottom: 1px solid rgb(174, 28, 157);
+}
+
+.location{
+    font-weight: bolder;
+}
+.locationInfo{
+    font-size: 1.1rem;
+    color: grey;
+    cursor: pointer;
+}
+.locationInfo:hover{
+    color: rgb(174, 28, 157);
+    border-bottom: 1px solid rgb(174, 28, 157);
+}
+
+.siteMap{
+    font-weight: bolder;
+}
+.siteInfo{
+    color: grey;
+    font-size: 1.1rem;
+
+    cursor: pointer;
+}
+.siteInfo:hover{
+    color: rgb(174, 28, 157);
+    border-bottom: 1px solid rgb(174, 28, 157);
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+        }
+
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .carousel-container h2 {
+            color: #fff;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .carousel {
+            display: flex;
+            gap: 12px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .carousel img {
+            width: 240px;
+            height: 140px;
+            border-radius: 8px;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .carousel img:hover {
+            transform: scale(1.12);
+        }
+
+        /* Navigation arrows */
+        .arrow {
+            position: absolute;
+            top: 55%;
+            transform: translateY(-50%);
+            font-size: 40px;
+            color: white;
+            background: rgba(0, 0, 0, 0.45);
+            border: none;
+            padding: 6px 12px;
+            cursor: pointer;
+            border-radius: 6px;
+            z-index: 10;
+        }
+
+        .arrow.left {
+            left: 10px;
+        }
+
+        .arrow.right {
+            right: 10px;
+        }
+
+        .arrow:hover {
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        /* -------------------------- */
+        /* 📱 Mobile (Small Screens)  */
+        /* -------------------------- */
+        @media (max-width: 600px) {
+            .carousel img {
+                width: 160px;
+                height: 100px;
+            }
+
+            .arrow {
+                font-size: 26px;
+                padding: 4px 8px;
+            }
+
+            .carousel-container h2 {
+                font-size: 18px;
+            }
+        }
+
+        /* -------------------------- */
+        /* 📱 Tablet (Medium Screens) */
+        /* -------------------------- */
+        @media (max-width: 900px) {
+            .carousel img {
+                width: 200px;
+                height: 120px;
+            }
+
+            .arrow {
+                font-size: 30px;
+            }
+
+            .carousel-container h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel-container">
+        <h2>Trending Now</h2>
+
+        <button class="arrow left">&#10094;</button>
+
+        <div class="carousel">
+            <img src=".//New on Neflix/1.webp" alt="">
+            <img src=".//New on Neflix/3.avif" alt="">
+            <img src=".//New on Neflix/2.webp" alt="">
+            <img src=".//New on Neflix/7.webp" alt="">
+            <img src=".//New on Neflix/8.jpg" alt="">
+            <img src=".//New on Neflix/9.jpg" alt="">
+            <img src=".//New on Neflix/9.jpg" alt="">
+            <img src=".//New on Neflix/9.jpg" alt="">
+            <img src=".//New on Neflix/9.jpg" alt="">
+            <img src=".//New on Neflix/9.jpg" alt="">
+            <img src=".//New on Neflix/9.jpg" alt="">
+            <img src=".//New on Neflix/9.jpg" alt="">
+        </div>
+
+        <button class="arrow right">&#10095;</button>
+    </div>
+
+    <script>
+        const carousel = document.querySelector(".carousel");
+        const leftBtn = document.querySelector(".arrow.left");
+        const rightBtn = document.querySelector(".arrow.right");
+
+        rightBtn.addEventListener("click", () => {
+            carousel.scrollLeft += 300; // scroll right
+        });
+ 
+        leftBtn.addEventListener("click", () => {
+            carousel.scrollLeft -= 300; // scroll left
+        });
+
+    </script>
+
+
+</body>
+
+</html>
