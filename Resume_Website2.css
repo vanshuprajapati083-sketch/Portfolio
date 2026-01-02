@@ -85,11 +85,20 @@ img {
     background: white;
     color: #667eea;
     border: 2px solid #667eea;
+    margin-right:12px
 }
 
 .btn-secondary:hover {
     background: #667eea;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .btn-secondary {
+        margin-right: 0;
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .section-title {
@@ -130,6 +139,7 @@ img {
 .webProjects {
     padding-top: 36px;
     text-align: center;
+    font-size: 32px;
 }
 
 /* Header Styles */
@@ -1005,6 +1015,7 @@ footer {
     }
 
 }
+
 
 
 
